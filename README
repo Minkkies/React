@@ -1,0 +1,11 @@
+# เนื้อหาทั้งหมดเป็นการทำตาม youtube
+สามารถดูเพิ่มเติมได้ที่ [mikelopster](https://www.youtube.com/watch?v=4tzmynf93p8&t=250s) 🧑‍💻
+
+สามารถดูเพิ่มเติมได้ที่ [KongRuksiam](https://www.youtube.com/watch?v=j-WvjKo_9WA)
+
+## โครงสร้างโปรเจกต์
+node_modules => โฟลเดอร์เก็บแพ็กเกจที่ติดตั้ง
+package.json => ไฟล์กำหนดข้อมูลโปรเจกต์และแพ็กเกจที่ใช้
+public => โฟลเดอร์เก็บไฟล์สาธารณะ เช่น index.html
+src => โฟลเดอร์เก็บซอร์สโค้ดของแอป 
+vite.config.js => ไฟล์กำหนดค่าของ Vite

@@ -1,13 +1,16 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
-function Video({ src,isPlaying }) {
-    const ref = useRef(null)
+export default function Video({ src, isPlaying, style, className }) {
+  const ref = useRef(null);
 
+  useEffect(() => {
     if (isPlaying) {
-        ref.current?.play()
+      ref.current?.play();
     } else {
-        ref.current?.pause()
+      ref.current?.pause();
     }
+ // เมื่อ isPlaying เปลี่ยนแปลง จะทำให้ useEffect ทำงานและเรียก play() หรือ pause() ตามค่าใหม่   
+  }, [isPlaying]); 
 
-    return <Videoo ref={ref} src={src} loop playsInline/>
+  return <video ref={ref} src={src} loop playsInline style={style} className={className} />;
 }

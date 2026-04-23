@@ -1,16 +1,82 @@
-# React + Vite
+# testReact
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+โปรเจกต์นี้เป็นตัวอย่าง React สำหรับฝึกพื้นฐานการทำงานร่วมกับ
+- Component
+- Props
+- Hooks
+- Routing
+- API Request
+- CRUD เบื้องต้น
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ฟีเจอร์หลัก
 
-## React Compiler
+- หน้าเริ่มต้นของแอป
+- หน้าแสดงรายการ ToDo
+- หน้าแก้ไข ToDo ตาม `id`
+- ลบรายการ ToDo ได้
+- ใช้ React Router DOM สำหรับเปลี่ยนหน้า
+- ใช้ axios เรียกข้อมูลจาก Mock API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## เทคโนโลยีที่ใช้
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- React Router DOM
+- Axios
+
+---
+
+## โครงสร้างไฟล์หลัก
+
+```bash
+src/
+  App.jsx
+  main.jsx
+  router.jsx
+  edit.jsx
+  todolist.jsx
+  assets/
+  components/
+```
+
+---
+
+## หน้าที่ของแต่ละไฟล์
+
+### `main.jsx`
+ไฟล์เริ่มต้นของโปรเจกต์ ใช้สร้าง router หลักและกำหนดเส้นทางของหน้าเว็บ
+
+### `router.jsx`
+หน้าแสดงรายการ ToDo พร้อมปุ่มแก้ไขและลบ
+
+### `edit.jsx`
+หน้าแก้ไขข้อมูล ToDo ตาม `id` ที่รับมาจาก URL
+
+### `todolist.jsx`
+หน้ารายการ ToDo อีกหน้าหนึ่งของโปรเจกต์
+
+### `App.jsx`
+หน้าเริ่มต้นของแอป
+
+---
+
+## การติดตั้งและรันโปรเจกต์
+
+### ติดตั้ง dependencies
+```bash
+npm install
+```
+
+### รันโปรเจกต์
+```bash
+npm run dev
+```
+
+### เปิดดูในเบราว์เซอร์
+```bash
+http://localhost:5173
+```

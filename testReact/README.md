@@ -27,6 +27,7 @@
 - Vite
 - React Router DOM
 - Axios
+- MockAPI: https://mockapi.io/
 
 ---
 
@@ -75,6 +76,9 @@ npm install
 ```bash
 npm run dev
 ```
+
+### API แบบจำลองที่ใช้
+ใช้ [MockAPI](https://mockapi.io/) สำหรับจำลองข้อมูลและทดสอบ CRUD เบื้องต้น
 
 ### เปิดดูในเบราว์เซอร์
 ```bash
